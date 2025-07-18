@@ -21,6 +21,6 @@ steps:
 - task: JfrogCliV2@1
   inputs:
     jfrogPlatformConnection: 'manojkm-oidc'
-    command: 'jf rt ping'
+    command: 'jf rt curl api/system/version'
 
 
