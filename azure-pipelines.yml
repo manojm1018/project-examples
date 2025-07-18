@@ -23,4 +23,12 @@ steps:
     jfrogPlatformConnection: 'manojkm-oidc'
     command: 'jf rt curl api/system/version'
 
+- task: JFrogGenericArtifacts@1
+  inputs:
+    command: 'Upload'
+    connection: 'manojkm-oidc'
+    specSource: 'file'
+    file: 'test.txt'
+    failNoOp: true
+
 
